@@ -51,6 +51,7 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     // This method is rerun every time setState is called
     int soma = _counter1 + _counter2;
+    int produto = _counter1 * _counter2;
     return Scaffold(
       appBar: AppBar(
         // TRY THIS: Try changing the color here to a specific color (to
@@ -88,6 +89,13 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
             Text(
               '$soma',
+              style: Theme.of(context).textTheme.headlineMedium,
+            ),
+           const Text(
+              'Produto:',
+            ),
+            Text(
+              '$produto',
               style: Theme.of(context).textTheme.headlineMedium,
             ),
           ],
