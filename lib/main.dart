@@ -54,9 +54,6 @@ class _MyHomePageState extends State<MyHomePage> {
     int produto = _counter1 * _counter2;
     return Scaffold(
       appBar: AppBar(
-        // TRY THIS: Try changing the color here to a specific color (to
-        // Colors.amber, perhaps?) and trigger a hot reload to see the AppBar
-        // change color while the other colors stay the same.
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
 
         title: Text(widget.title),
@@ -117,7 +114,6 @@ class _MyHomePageState extends State<MyHomePage> {
           ),
         ],
       )
-
     );
   }
 }
